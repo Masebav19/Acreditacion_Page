@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRERA ELECTRÓNICA Y AUTOMATIZACIÓN</title>
+</head>
+<body>
+    <style>
+        **::before::after{
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+        header{
+            background: #153177;
+            padding: 0px 8px 8px 8px;
+            color: #ffff
+        }
+        header h2{
+            color: #fff;
+        }
+        header nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: solid #b8b8b8 2px;
+        }
+        header nav span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-right: solid #b8b8b8 3px;
+            width: 30%;
+            height: 4vh;
+            transition: background ease-in-out 0.5s;
+        }
+        header nav span:last-child{
+            border-right: none;
+            
+        }
+        header nav span:hover{
+            color: #ffff;
+            background: #ffffffaa;
+            transition: background ease-in-out 0.5s;
+        }
+        header nav span a{
+            color: #fff;
+            text-decoration: none;
+        }
+        header nav span a:hover{
+            color: #153177;
+        }
+        header h1{
+            color: #fff;
+            margin: 0;
+        }
+        header p a{
+            color: #c98c3d;
+        }
+        header p a:visited{
+            color: #fff;
+        }
+
+        main{
+            padding: 10px;
+        }
+        main img{
+            width: 100%;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        p{
+            font-size: 18px;
+        }
+        li{
+            font-size: 16px;
+        }
+        #cardContainer{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            
+        }
+        #cardContainer span:first-child{
+            border-right: dashed 2px;
+            width: 40%;
+        }
+        #OptionContainer{
+            width: 90vw;
+            margin-left: 2vw;
+        }
+        #TabOptionList{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: solid #b8b8b8 1px;
+            margin-bottom: 5px;
+        }
+        #TabOptionList li{
+            padding-top: 10px;
+            height: 5vh;
+            text-align: center;
+            list-style-type: none;
+            width: 100%;
+            border-radius: 5px 5px 0px 0px;
+
+        }
+        #TabContainer{
+            margin:0;
+            display: flex;
+            padding: 10px;
+            background: #15317733;
+            border-radius: 10px;
+        }
+        .TabOption.active{
+            background: #b8b8b8;
+            transition: background ease-in-out 0.7s;
+        }
+        .TabContent{
+            display: none;
+        }
+        .TabContent.active li{
+            margin: 20px 20px 20px 0px;
+        }
+        .TabContent.active{
+            display: block;
+        }
+        .divisor{
+            background: #c98c3d;
+            height: 10px;
+            width: 50px;
+        }
+        .Documentacion{
+            display: block;
+            text-decoration: none;
+            background: #153177aa;
+            width: 50px;
+            height: 20px;
+            padding: 5px;
+            border-radius: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        footer{
+            background: #153177;
+            color: #fff;
+            padding: 10px;
+        }
+        footer h2{
+            color: #fff;
+            text-align: center;
+            margin-top: 1px;
+        }
+        #infoContainer{
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+        }
+        #infoContainer a{
+            color: #c98c3d;
+        }
+        h1,h2,h3,h4,h5{
+            margin: 5px;
+            color: #153177;
+        }
+        #HeaderContainer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #HeaderContainer img{
+            width: 200px;
+        }
+    </style>
+    <script>
+        function handleOpenTab(TabNumber){
+            const tabList = document.getElementById('TabOptionList')
+            const lists = tabList.children
+            const TabContentContainer = document.getElementById("TabContainer")
+            const TabContent = TabContentContainer.children
+            for(let i= 0; i< TabContent.length;i++){
+                if(i === TabNumber){
+                    TabContent[i].className += " active"
+                    lists[i].className += " active"
+                }else{
+                    TabContent[i].className = TabContent[i].className.replace(' active','')
+                    lists[i].className = lists[i].className.replace(' active','')
+                }
+            }
+        }
+    </script>
+    <header>
+        <nav>
+            <span class="navOption"><a href="https://webhistorico.epn.edu.ec/" target="_blank">Página EPN</a></span>
+            <span class="navOption"><a href="https://cea.epn.edu.ec/" target="_blank">Página CEA</a></span>
+            <span class="navOption"><a href="http://172.29.73.57:1234/documentacion">Documentación académica</a></span>
+        </nav>
+        <div id="HeaderContainer">
+            <div>
+                <h2>Carrera</h2><h1>ELECTRÓNICA Y AUTOMATIZACIÓN</h1>
+                <div class="divisor"></div>
+                <small>01 de julio del 2020</small>
+                <p><strong>Resolucion de aprobación de CES</strong> <a href="https://webhistorico.epn.edu.ec/wp-content/uploads/2022/05/CES-RPC-SE-09-No.086-2020-01jul2020.pdf" target="_blank">RPC-SE-09-No.086-2020</a></>
+            </div>
+            <div>
+                <img src="https://webhistorico.epn.edu.ec/wp-content/uploads/2023/12/logo-epn-web.svg" alt="Logo EPN">
+            </div>
+        </div> 
+    </header>
+    <main>
+        <h3>Descripción de la carrera</h3>
+        <div class="divisor"></div>
+        <p class="description">
+            La Carrera de Electrónica y Automatización estudia y analiza procesos de producción en plantas industriales, agroindustriales, sistemas de transporte, bioingeniería, sistemas de seguridad y supervisión de empresas, fábricas, edificios, hospitales, sistemas robóticos e instalaciones industriales desde una visión teórica-metodológica y práctica, para contribuir al mejoramiento continuo de los procesos industriales y a la trasformación de la matriz productiva en los sectores estratégicos priorizados del Ecuador, industrias estratégicas, impulsando el desarrollo de energías limpias, mediante el uso y aplicación de teorías y técnicas de control avanzado, tecnología electrónica digital y analógica, control electrónico de potencia, redes de comunicación, informática y sistemas inteligentes.
+        </p>
+        <img src="https://www.epn.edu.ec/wp-content/uploads/2022/05/electronica_automatizacion_banner.jpg" alt="Logo de la carrera">
+        <div id="cardContainer">
+            <span>
+                <h2>Título que otorga</h2>
+                <div class="divisor"></div>
+                <p>Ingeniera/o en Electrónica y Automatización</p>
+                <h2>Duración</h2>
+                <div class="divisor"></div>
+                <p>Nueve (9) períodos académicos</p>
+                <h2>Tipo de formación</h2>
+                <div class="divisor"></div>
+                <p>Ingeniería</p>
+            </span>
+            <span>
+                <h2>Unidad Académica</h2>
+                <div class="divisor"></div>
+                <p>Facultad de Ingeniería Eléctrica y Electrónica</p>
+                <h2>Modalidad</h2>
+                <div class="divisor"></div>
+                <p>Presencial</p>
+                <h2>Mas información (Documentación académica)</h2>
+                <div class="divisor"></div>
+                <p><a href="http://172.29.73.57:1234/documentacion" class="Documentacion">Ir →</a></p>
+            </span>
+        </div>
+        <div id="OptionContainer">
+            <h3>Mas Información</h3>
+            <div class="divisor"></div>
+            <ul id="TabOptionList">
+                <li class="TabOption active" onclick="handleOpenTab(0)">Perfil de ingreso</li>
+                <li class="TabOption" onclick="handleOpenTab(1)">Objetivos</li>
+                <li class="TabOption" onclick="handleOpenTab(2)">Perfil de egreso</li>
+                <li class="TabOption" onclick="handleOpenTab(3)">Perfil profesional</li>
+                <li class="TabOption" onclick="handleOpenTab(4)">Requisitos</li>
+                <li class="TabOption" onclick="handleOpenTab(5)">Documentos para graduación</li>
+            </ul>
+            <span id="TabContainer">
+                <div class="TabContent active">
+                    <p>Debido al futuro campo profesional en donde deberá ejercer su trabajo, el aspirante a la Carrera en Electrónica y Automatización en la Escuela Politécnica Nacional debe tener un perfil compatible con los siguientes conocimientos básicos, habilidades, actitudes y valores:</p>
+                    <ul>
+                        <li>Poseer habilidades en las áreas tecnológicas.</li>
+                        <li>Estar interesado en las ciencias exactas, electrónico, robótico, y automatización.</li>
+                        <li>Deseoso de utilizar tecnologías de punta y herramientas de diseño de última generación.</li>
+                        <li>Dispuesto a diseñar soluciones innovadoras con proyectos de aplicación práctica.</li>
+                        <li>Ser creativo para resolver problemas, proponer mejoras y dar soluciones a situaciones nuevas.</li>
+                        <li>Tener valores personales de responsabilidad, honestidad, solidaridad social, responsabilidad con el medio ambiente y deseo de superación.</li>
+                    </ul>
+                </div>
+                <div class="TabContent">
+                    <h5>Objetivo general</h5>
+                    <p>Formar ingenieros de alto nivel, creativos con cualidades críticas, ética, solidarios, capaces de comprender, adaptar y generar tecnologías en el campo de la Electrónica y Automatización Industrial con conocimientos y habilidades que le permitan desarrollar sus actividades principalmente en el sector industrial, productivo, de energía y de desarrollo tecnológico, buscando la optimización de los recursos, el mejoramiento continuo de los procesos y conservación ecológica.</p>
+                    <h5>Objetivos específicos</h5>
+                    <p><strong>Conocimiento</strong></p>
+                    <ul><li>Formar ingenieros capaces de comprender, analizar, diseñar y construir sistemas de control automáticos en el sector industrial, productivo y de energía aplicando los métodos y técnicas más actuales y modernas.</li></ul>
+                    <p><strong>Pertinencia</strong></p>
+                    <ul><li>Incorporar a la sociedad ingenieros capaces de enfrentar los problemas de automatización en la industria, para mejorar la matriz productiva del País con soluciones tecnológicas innovadoras buscando la optimización de los recursos, el mejoramiento continuo de los procesos y la conservación ambiental.</li></ul>
+                    <p><strong>Aprendizajes</strong></p>
+                    <ul>
+                        <li>Comprender las diferentes disciplinas que abarca el campo de la electrónica y la automatización, para aportar con sus conocimientos profesionales y en forma creativa al desarrollo del País.</li>
+                        <li>Desarrollar habilidades para trabajar en equipo promoviendo la inclusión de los estudiantes en proyectos interdisciplinarios para establecer vínculos entre la universidad y la sociedad.</li>
+                        <li>Fomentar el aprendizaje en contextos interculturales y de integración haciendo uso de tecnologías de la información, comunicación y participación.</li>
+                    </ul>
+                    <p><strong>Ciudadanía integral</strong></p>
+                    <ul>
+                        <li>Promover la formación de ingenieros con conciencia social, que estén en capacidad de concebir nuevas ideas, entender nuevos paradigmas y usar su conocimiento en el campo de la electrónica y la automatización para contribuir a modernizar la matriz productiva y de esta manera mejorar las condiciones de vida de la población ecuatoriana.</li>
+                        <li>Desarrollar en los estudiantes la conciencia sobre la necesidad de preservar los recursos naturales y de ahorrar energía, para que utilicen su conocimiento en el campo de la electrónica y la automatización en el desarrollo de sistemas de control que consideren buenas prácticas ambientales que garanticen los derechos de la naturaleza y la sostenibilidad ambiental territorial y global.</li>
+                    </ul>
+
+                </div>
+                <div class="TabContent">
+                    <h4>Resultados de aprendizaje</h4>
+                    <h5>Generales</h5>
+                    <p><strong>RG1. </strong>Comprender la complejidad de la profesión y el compromiso con la sociedad y el medio ambiente, con el fin de cumplir con su código deontológico.</p>
+                    <p><strong>RG2. </strong>Actuar con criterio y responsabilidad frente a dilemas éticos en el campo de su profesión aplicando valores y códigos de ética profesional reconocidos.</p>
+                    <p><strong>RG3. </strong>Manifestar interés por temas contemporáneos en el ámbito local, nacional e internacional con el fin de analizarlos en relación con su profesión, discriminando las fuentes de información.</p>
+                    <p><strong>RG4. </strong>Demostrar capacidad para la integración, participación proactiva, liderazgo, aceptación a la diversidad, pluralismo, comprensión mutua y solución de conflictos.</p>
+                    <p><strong>RG5. </strong>Conocer el cambio tecnológico para desarrollar creatividad e innovación.</p>
+                    <p><strong>RG6. </strong>Establecer estrategias para continuar aprendiendo a lo largo de su vida a través de identificar oportunidades de aprendizaje necesarias para el desarrollo y mejoramiento continuo de su carrera profesional.</p>
+                    <p><strong>RG7. </strong>Demostrar habilidades para realizar búsquedas bibliográficas, utilizar bases de datos y otras fuentes de información.</p>
+                    <p><strong>RG8. </strong>Fomentar las buenas prácticas de la profesión.</p>
+                    <p><strong>RG9. </strong>Demostrar capacidad para liderar en ámbitos técnicos, financieros, humanos y de gestión.</p>
+                    <p><strong>RG10. </strong>Comunicar el conocimiento en diversos estilos y formatos.</p>
+                    <p><strong>RG11. </strong>Demostrar suficiente fluidez en, al menos, un idioma extranjero, para comunicar sus propuestas técnicas de manera efectiva.</p>
+                    <p><strong>RG12. </strong>Participar en equipos de trabajo, utilizando destrezas de cooperación, comunicación, manejo de conflictos y definición de estrategias.</p>
+                    <h5>Específicos</h5>
+                    <p><strong>RE1. </strong>Proponer soluciones técnicamente satisfactorias y sustentables en el tiempo dentro del ámbito de su profesión.</p>
+                    <p><strong>RE2. </strong>Aplicar los conocimientos de análisis y diseño de sistemas de control para la solución de problemas de su entorno, en el mejoramiento de su formación científico - técnica y ética.</p>
+                    <p><strong>RE3. </strong>Aplicar los métodos prácticos y teóricos apropiados para solucionar los problemas técnicos de la profesión.</p>
+                    <p><strong>RE4. </strong>Emplear principios económicos, de calidad, conservación, métodos estadísticos y de información técnica disciplinar.</p>
+                    <p><strong>RE5. </strong>Aplicar las regulaciones que incluyan la legislación nacional e internacional apropiada para su campo de especialización.</p>
+                    <p><strong>RE6. </strong>Aplicar principios de matemáticas y ciencias básicas para describir el comportamiento y operación de procesos y sistemas en el ámbito de su profesión.</p>
+                    <p><strong>RE7. </strong>Integrar los principios de monitoreo y control en la supervisión de procesos industriales.</p>
+                    <p><strong>RE8. </strong>Aplicar las leyes fundamentales para explicar el comportamiento de los diferentes sistemas automáticos de producción.</p>
+                    <p><strong>RE9. </strong>Aplicar normas de sistemas de energía eléctrica en sistemas residenciales, comerciales y en aplicaciones industriales.</p>
+                    <p><strong>RE10. </strong>Seleccionar dispositivos electrónicos, eléctricos, electromecánicos, neumáticos, electroneumáticos, utilizados a nivel industrial, residencial y en biomedicina.</p>
+                    <p><strong>RE11. </strong>Integrar las tecnologías de última generación para el mejoramiento continuo de los procesos productivos.</p>
+                    <p><strong>RE12. </strong>Aplicar nuevas teorías y modelos en el campo de la electrónica y automatización.</p>
+                    <p><strong>RE13. </strong>Perfeccionar habilidades para llevar a cabo investigaciones y estudios detallados de aspectos técnicos en concordancia con los conocimientos y comprensión de las temáticas de su carrera.</p>
+                    <p><strong>RE14. </strong>Transmitir los conocimientos, problemas y soluciones aplicados en el campo de la electrónica y automatización en lenguaje apropiado a públicos especializados y no especializados.</p>
+                    <p><strong>RE15. </strong>Generar soluciones a problemas técnicos, administrativos o gerenciales en sistemas automatizados.</p>
+                    <p><strong>RE16. </strong>Generar emprendimientos propios en el ámbito de su profesión con proyección local, nacional o internacional.</p>
+                    <p><strong>RE17. </strong>Integrar los conocimientos adquiridos en la Carrera para resolver problemas pertinentes al campo de acción del Ingeniero en Electrónica y Automatización.</p>
+                </div>
+                <div class="TabContent">
+                    <ul>
+                        <li>Diseñar, integrar y crear sistemas automáticos de control para satisfacer los requerimientos técnicos del sector industrial.</li>
+                        <li>Formular, desarrollar, implementar e innovar proyectos de automatización con criterios de calidad, seguridad y funcionalidad.</li>
+                        <li>Construir y/o adaptar soluciones tecnológicas para el mejoramiento continuo de los procesos de producción y servicios.</li>
+                        <li>Responder de manera efectiva a situaciones nuevas a fin de asimilar e incorporar los cambios científicos, tanto en la parte técnica como en el área administrativa gerencial.</li>
+                        <li>Actuar y decidir con sentido ético, proyección social y gestión empresarial.</li>
+                        <li>Enfatizar en las soluciones que optimicen los recursos disponibles y la conservación ecológica para contribuir al desarrollo sostenido y sustentable del País.</li>
+                    </ul>
+                </div>
+                <div class="TabContent">
+                    <h4>Requisitos de Graduación</h4>
+                    <ul>
+                        <li>Tener aprobado el 100% de plan de asignaturas de acuerdo a lo establecido en su malla curricular.</li>
+                        <li>Cumplir con los requisitos académicos (haber aprobado las asignaturas que no otorgan créditos y obtener la suficiencia en el idioma inglés).</li>
+                        <li>Cumplir con horas de prácticas preprofesionales.</li>
+                        <li>Aprobar la asignatura de Trabajo de Integración Curricular o la asignatura de Examen Complexivo</li>
+                    </ul>
+                </div>
+                <div class="TabContent">
+                    <h4>Documentos requeridos para proceso de graduación</h4>
+                    <li>Hoja de comprobación del expediente de graduación.</li>
+                    <li>Hoja de datos personales actualizada obtenida del SAEw.</li>
+                    <li>Certificado de haber realizado prácticas laborales y cumplido con las horas de servicio comunitario obtenido del SAEw.</li>
+                    <li>Certificado de periodos matriculados.</li>
+                    <li>Currículo Académico certificado.</li>
+                    <li>Certificado de créditos por categorías.</li>
+                    <li>Formulario F_AA_211: Certificado de no adeudar, respaldado por las diferentes unidades y emitido por el Vicerrectorado de Docencia.</li>
+                    <li>Formulario BRB_TIC_1: Registro bibliográfico, solo para estudiantes que escogieron la opción de Trabajo de Integración Curricular (TIC).</li>
+                    <li>Certificado de originalidad, solo para estudiantes que escogieron la opción de Trabajo de Integración Curricular (TIC)</li>
+                </div>
+            </span>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Contacto</h2>
+        <div id="infoContainer">
+            <span>
+                <h4>Coordinador de la carrera</h4>
+                <p>PhD. Patricio Javier Cruz Dávalos</p>
+                <a href="mailto:patricio.cruz@epn.edu.ec">patricio.cruz@epn.edu.ec</a>
+            </span>
+            <span>
+                <p><strong>Ubicación:</strong> Edificio No. 16 FIEE, Piso 2, Oficina E-204</p>
+                <p><strong>Teléfono: </strong> (+593) 2 2976 300, ext. 2209</p>
+                <p><strong>Horario de atención:</strong> De 8:00 a 13:00 y de 14:00 a 17:00</p>
+                <p><strong>Correo:</strong> <a href="mailto:coord.electronica.control@epn.edu.ec">coord.electronica.control@epn.edu.ec</a></p>
+                <p><strong>Sitio web:</strong> <a href="https://cea.epn.edu.ec/" target="_blank">cea.epn.edu.ec</a></p>
+            </span>
+        </div>
+        
+    </footer>
+</body>
+</html>
