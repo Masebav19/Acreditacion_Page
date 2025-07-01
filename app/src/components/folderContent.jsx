@@ -11,7 +11,7 @@ export default function FolderContent({ item, NavWindow }) {
     const ViewContent = useRef(undefined)
     useEffect(() => {
         if(!regex.test(directories?.folderPath)){
-            fetch(`http://192.168.1.41:3000/repo/${directories.id}${directories?.folderPath ? `?Path=${directories.folderPath}` : ''}`).
+            fetch(`http://172.29.73.57:3000/repo/${directories.id}${directories?.folderPath ? `?Path=${directories.folderPath}` : ''}`).
             then(response => response.json()).
             then(data => setFilesAndFolders(data.ContentDir))
         }
@@ -80,13 +80,13 @@ export default function FolderContent({ item, NavWindow }) {
                    <div id="PreView">
                         {!(directories?.folderPath.endsWith('.mp4')||directories?.folderPath.endsWith('.avi')||directories?.folderPath.endsWith('.mpg')) &&
                             <iframe 
-                            src={`http://192.168.1.41:3000/repo/${directories.id}${directories?.folderPath ? `?Path=${directories.folderPath}` : ''}`}
+                            src={`http://172.29.73.57:3000/repo/${directories.id}${directories?.folderPath ? `?Path=${directories.folderPath}` : ''}`}
                             title="Preview"
                             id="Preview"
                             allow="autoplay"
                         ></iframe>}
                         {(directories?.folderPath.endsWith('.mp4')||directories?.folderPath.endsWith('.avi')||directories?.folderPath.endsWith('.mpg')) &&
-                            <video src={`http://192.168.1.41:3000/repo/${directories.id}${directories?.folderPath ? `?Path=${directories.folderPath}` : ''}`}
+                            <video src={`http://172.29.73.57:3000/repo/${directories.id}${directories?.folderPath ? `?Path=${directories.folderPath}` : ''}`}
                             controls
                             autoPlay
                             ></video>

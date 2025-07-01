@@ -17,7 +17,7 @@ export default function ContentCard({ element,directories,setDirectories, setOpe
             setOpenViewr(true);
             setDirectories(directoryCopy); 
             }else{
-                window.open(`http://192.168.1.41:3000/repo/${directoryCopy.id}${directoryCopy?.folderPath ? `?Path=${directoryCopy.folderPath}` : ''}`, '_blank');
+                window.open(`http://172.29.73.57:3000/repo/${directoryCopy.id}${directoryCopy?.folderPath ? `?Path=${directoryCopy.folderPath}` : ''}`, '_blank');
             } 
         }
     }
