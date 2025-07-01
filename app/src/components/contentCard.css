@@ -1,0 +1,23 @@
+.FileAndfolder.InfoContainer{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #00000022;
+    align-items: center;
+    padding: 2px;
+    gap: 5px;
+    transition: background 0.25s ease-in-out;
+}
+.FileAndfolder.InfoContainer svg{
+    height: 1.5rem;
+}
+
+.FileAndfolder.InfoContainer:hover{
+    background: #00000011;
+    transition: background 0.25s ease-in-out;
+}
+.FileAndfolder.InfoContainer p:hover{
+    color: #3e3eef;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}

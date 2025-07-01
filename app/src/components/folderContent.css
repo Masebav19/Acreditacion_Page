@@ -1,0 +1,74 @@
+#FilesAnDFoldersContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#ViewerContainer{
+    background: #ffffff;
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    margin: auto;
+    height: 90vh;
+    box-shadow: 2px 2px 2px 2px #000000aa;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#Viewer-Header{
+  display: flex;
+  flex-direction: row;
+  height: 8vh;
+  justify-content: space-between; 
+  margin-bottom: 20px;
+}
+#PreView video{
+  height: 75vh;
+  animation: VideoAnimation ease-in-out 2s forwards;
+}
+#PreView iframe{
+  animation: DocAnimation ease-in-out 0.2s forwards;
+}
+#PreView{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Viewer-Close{
+  height: 50%;
+  cursor: pointer;
+  
+}
+
+#Preview{
+  height: 75vh;
+  width: 88vw;
+}
+
+.Folder.Path:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@keyframes VideoAnimation{
+  0%{
+    scale:0;
+    rotate: 90deg;
+  }
+  100%{
+    scale:1;
+    rotate: 0deg;
+  }
+}
+
+@keyframes DocAnimation{
+  0%{
+    scale:0;
+    transform: rotate(90deg);
+  }
+  100%{
+    scale:1;
+    transform: rotate(0deg);
+  }
+}

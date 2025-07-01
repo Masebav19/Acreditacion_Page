@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "icon": "informe.svg",
+        "tittle": "Informe de autoevaluación",
+        "description": "Informe de autoevaluación del programa académico, incluyendo análisis de fortalezas y áreas de mejora.",
+        "type": "documents",
+        "path": "C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Informe de autoevaluación"
+    },
+    {
+        "id": 2,
+        "icon": "malla.svg",
+        "tittle": "Mallas curriculares vigentes",
+        "description": "Mallas curriculares actualizadas de los programas académicos, incluyendo asignaturas y créditos.",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Mallas curriculares vigentes"
+    },
+    {
+        "id": 3,
+        "icon": "libros.svg",
+        "tittle": "Muestras de libros",
+        "description": "Muestras de libros de texto y manuales, guías metodológicas para la implementación de prácticas, trabajos de laboratorio, trabajo gráfico, proyectos",
+        "type": "link",
+        "path":"https://biblioteca.epn.edu.ec/cgi-bin/koha/opac-main.pl"
+    },
+    {
+        "id": 4, 
+        "icon": "proyecto.svg", 
+        "tittle": "Ejemplo de proyectos",
+        "description": "Ejemplos de proyectos de los estudiantes",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Ejemplo de proyectos"
+    },
+    {
+        "id": 5,
+        "icon": "lab.svg",
+        "tittle": "Ejemplos de informes de laboratorio",
+        "description": "Ejemplos de trabajos de laboratorio realizados por los estudiantes",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Ejemplos de informes de laboratorio"
+    },
+    {
+        "id": 6,
+        "icon": "informe.svg",
+        "tittle": "Ejemplos de informes de prácticas preprofesionales",
+        "description": "Ejemplos de informes de estudiantes al realizar Prácticas preprofesionales",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Ejemplos de informes de prácticas preprofesionales"
+    },
+    {
+        "id": 7,
+        "icon": "storage.svg",
+        "tittle": "Acceso al sistema de evaluación",
+        "description": "Acceso al sistema de evaluación de los estudiantes",
+        "type": "link",
+        "path":"https://aulasvirtuales.epn.edu.ec/login/index.php"
+    },
+    {
+        "id": 8,
+        "icon": "graduacion.svg",
+        "tittle": "Ejemplos de proyectos de graduación",
+        "description": "Ejemplos de proyectos de graduación (finales) de estudiantes",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Ejemplos de proyectos de graduación"
+    },
+    {
+        "id": 9,
+        "icon": "doc.svg",
+        "tittle": "Actas de reuniones",
+        "description": "Actas de las reuniones del programa",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Actas de reuniones"
+    },
+    {
+        "id": 10,
+        "icon": "doc.svg",
+        "tittle": "Actas de reuniones de empleadores",
+        "description": "Documentos (actas de las reuniones) que confirmen la participación de los empleadores en la discusión del contenido del programa educativo, su ajuste y/o actualizaciones",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Actas de reuniones de empleadores"
+    },
+    {
+        "id": 11,
+        "icon": "portafolio.svg",
+        "tittle": "Acceso al portafolio de los estudiantes",
+        "description": "Acceso al portafolio de cada estudiante",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Acceso al portafolio de los estudiantes"
+    },
+    {
+        "id": 12,
+        "icon": "encuestas.svg",
+        "tittle": "Acceso a encuentas",
+        "description": "Formatos y resultados de encuestas de diferentes grupos de interés",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Acceso a encuentas"
+    },
+    {
+        "id": 13,
+        "icon": "stadisticas.svg",
+        "tittle": "Estadisticas de movilidad",
+        "description": "Estadística de movilidad entrante/saliente en los últimos 5 años por carrera",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Estadisticas de movilidad"
+    },
+    {
+        "id": 14,
+        "icon": "otros.svg",
+        "tittle": "Otros documentos",
+        "description": "Otros materiales que las carreras",
+        "type": "documents",
+        "path":"C:/Users/mateo/OneDrive - Escuela Politécnica Nacional/Archivos Acreditación/Otros documentos"
+    }
+]

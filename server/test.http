@@ -1,0 +1,14 @@
+GET http://localhost:3000/repo
+
+###
+
+GET http://localhost:3000/repo/2
+
+### 
+GET http://localhost:3000/repo/2?path=malla_electronica_automatizacion-PENSUM 2020.pdf
+
+###
+GET https://biblioteca.epn.edu.ec/cgi-bin/koha/opac-search.pl?idx=&q=Arduino&limit=&weight_search=1
+
+###
+GET http://localhost:3000/repo/8?path=PROTOTIPO%20RECEPTOR%20DEL%20POSICIONAMIENTO%20DE%20UNA%20AERONAVE/Videos%20demostrativos/PruebaLOS.mp4
