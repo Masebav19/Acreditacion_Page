@@ -72,3 +72,9 @@
     transform: rotate(0deg);
   }
 }
+
+@media (max-width: 840px) {
+  #PreView video{
+  height: 20vh;
+}
+}

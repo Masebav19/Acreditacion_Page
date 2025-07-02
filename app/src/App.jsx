@@ -9,7 +9,7 @@ const [NavRepositorio, setNavRepositorio] = useState({});
 const NavWindow = useRef(undefined)
 
 useEffect(()=>{
-  fetch('http://172.29.73.57:3000/repo').then(Response=> Response.json()).then(data=> setRepositorio(data))
+  fetch('http://192.168.1.41:3000/repo').then(Response=> Response.json()).then(data=> setRepositorio(data))
 },[])
 
   return (

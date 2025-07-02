@@ -12,12 +12,12 @@ export default function ContentCard({ element,directories,setDirectories, setOpe
         if(!regex.test(element)){
             setDirectories(directoryCopy);      
         }else{
-            if(window.innerWidth > 840){
+            if(window.innerWidth > 840 || directoryCopy?.folderPath.endsWith('.mp4')){
             NavWindow.current.scrollTop = 0
             setOpenViewr(true);
             setDirectories(directoryCopy); 
             }else{
-                window.open(`http://172.29.73.57:3000/repo/${directoryCopy.id}${directoryCopy?.folderPath ? `?Path=${directoryCopy.folderPath}` : ''}`, '_blank');
+                window.open(`http://192.168.1.41:3000/repo/${directoryCopy.id}${directoryCopy?.folderPath ? `?Path=${directoryCopy.folderPath}` : ''}`, '_blank');
             } 
         }
     }
